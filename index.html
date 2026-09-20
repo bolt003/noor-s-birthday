@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#070b14">
+  <title>For Noor 💙</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="hearts" aria-hidden="true"></div>
+
+  <main class="app">
+    <!-- PASSWORD -->
+    <section id="lock" class="screen active">
+      <div class="card lock-card">
+        <div class="lock-heart">♡</div>
+        <p class="tiny">A little something is waiting for you</p>
+        <h1>Only for <span>Noor</span></h1>
+        <p class="sub">Enter your birthday to open your surprise 🎀</p>
+        <input id="password" inputmode="numeric" autocomplete="off" placeholder="DD / MM" maxlength="10">
+        <button class="primary" id="unlockBtn">Open my surprise</button>
+        <p id="wrong" class="error"></p>
+        <p class="hint">Hint: your special day ✨</p>
+      </div>
+    </section>
+
+    <!-- WELCOME -->
+    <section id="welcome" class="screen">
+      <div class="card hero-card">
+        <div class="photo-frame">
+          <img src="assets/photos/photo1.jpg" alt="Noor" onerror="this.style.display='none'; this.parentElement.classList.add('empty-photo')">
+          <div class="photo-fallback">Add your favourite photo here 📸</div>
+        </div>
+        <p class="eyebrow">HEY, NOOR ♡</p>
+        <h1>I made something<br><span>just for you.</span></h1>
+        <p class="sub">Because your first birthday with me deserves more than a normal “happy birthday.”</p>
+        <button class="primary" data-next="question">Continue, Jaanu →</button>
+      </div>
+    </section>
+
+    <!-- PLAYFUL QUESTION -->
+    <section id="question" class="screen">
+      <div class="card question-card">
+        <div class="sticker">🐶💙</div>
+        <p class="eyebrow">ONE IMPORTANT QUESTION</p>
+        <h1>Will you let me<br><span>spoil you today?</span></h1>
+        <p class="sub">No pressure, Sweetu. (There is totally pressure.) 😭❤️</p>
+        <div class="buttons">
+          <button class="primary" id="yesBtn">YES, obviously 💗</button>
+          <button class="secondary" id="noBtn">No 😤</button>
+        </div>
+        <p id="noMessage" class="no-message"></p>
+      </div>
+    </section>
+
+    <!-- BIRTHDAY -->
+    <section id="birthday" class="screen">
+      <div class="card birthday-card">
+        <div class="cake">🎂</div>
+        <p class="eyebrow">21 SEPTEMBER</p>
+        <h1>Happy Birthday,<br><span>my Noor.</span> 💙</h1>
+        <p class="sub">My favourite girl. My favourite notification. My favourite person. My Bachcha.</p>
+        <button class="primary" data-next="gallery">I have more to say →</button>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="screen">
+      <div class="card gallery-card">
+        <p class="eyebrow">A FEW OF MY FAVOURITE VIEWS</p>
+        <h1>Of course,<br><span>they're all you.</span></h1>
+        <div class="gallery">
+          <div class="pic"><img src="assets/photos/photo1.jpg" alt="Noor" onerror="this.parentElement.classList.add('missing')"></div>
+          <div class="pic"><img src="assets/photos/photo2.jpg" alt="Noor" onerror="this.parentElement.classList.add('missing')"></div>
+          <div class="pic"><img src="assets/photos/photo3.jpg" alt="Noor" onerror="this.parentElement.classList.add('missing')"></div>
+          <div class="pic"><img src="assets/photos/photo4.jpg" alt="Noor" onerror="this.parentElement.classList.add('missing')"></div>
+          <div class="pic"><img src="assets/photos/photo5.jpg" alt="Little Noor" onerror="this.parentElement.classList.add('missing')"></div>
+          <div class="pic"><img src="assets/photos/photo6.jpg" alt="Little Noor" onerror="this.parentElement.classList.add('missing')"></div>
+        </div>
+        <p class="sub small">From the cutest little Bachcha to the most beautiful girl… and everything in between.</p>
+        <button class="primary" data-next="letter">Read your letter 💌</button>
+      </div>
+    </section>
+
+    <!-- LETTER -->
+    <section id="letter" class="screen">
+      <div class="card letter-card">
+        <div class="envelope">💌</div>
+        <p class="eyebrow">A LETTER FOR MY NOOR</p>
+        <h1>Dear <span>Jaanu,</span></h1>
+        <div class="letter-text">
+          <p>Happy birthday, my Noor. My Sweetu. My Bachcha. My Mishriii. 💙</p>
+          <p>This is our first birthday together, and I already know there will be so many more so many occasions, so many ordinary days, so many memories waiting for us.</p>
+          <p>We started on the 7th of September. We haven’t spoken for hours on audio or video calls yet, but somehow we just clicked. And now I can’t imagine my days without you. You’ve become inseparable from me.</p>
+          <p>You take care of me like I’m your child… and I look at you the same way sometimes like my baby girl. It’s strange and soft and perfect all at once. You call me Chiku, and every time you do, my heart melts a little more.</p>
+          <p>Even with all the distance between us, you still feel close. I don’t need a video call to know that you’re mine and I’m yours. I love you so much, Noor. More than I know how to say properly.</p>
+          <p>I want you with me — wherever life takes us. I want the random messages, the silly fights, the “good morning” texts, the quiet nights, and every version of us we haven’t become yet.</p>
+          <p>So today, please smile a little extra. Eat something you love. Feel special because you truly are.</p>
+          <p><strong>And if I could give you one thing right now, it would be a way to close this distance for just a moment.</strong></p>
+          <p>Come here, Jaanu. I owe you a hug… and a whole lifetime more. 🤍</p>
+        </div>
+        <button class="primary" data-next="poem">Read the poem I wrote for you 📜</button>
+      </div>
+    </section>
+
+    <!-- POEM -->
+    <section id="poem" class="screen">
+      <div class="card poem-card">
+        <div class="envelope">📜</div>
+        <p class="eyebrow">A POEM FROM CHIKU</p>
+        <h1>For my <span>Noor</span></h1>
+        <div class="poem-box">
+          <p>Meri Noor, meri Radha, tu hi mera sukoon,<br>
+          Tere bina adhoora sa lagta hai mera junoon.</p>
+          <p>Mile nahi kabhi, phir bhi tu itni apni si hai,<br>
+          Door hokar bhi mere dil ke sabse kareeb si hai.</p>
+          <p>Kabhi meri beti, kabhi meri maa ban jaati hai,<br>
+          Aur har baar meri Radha banke mujhe Krishna bulati hai.</p>
+          <p>Kal kya hoga, Chiku ko nahi pata, bas itna zaroor hai<br>
+          Jahan bhi meri zindagi ho, wahan tera hi noor hai.</p>
+          <p>Tera haath thaam kar ek din saari dooriyan mitaana hai,<br>
+          Aur Noor, isi dil se tujhe apni humsafar banaana hai.</p>
+          <p class="heart">❤️</p>
+        </div>
+        <button class="primary" data-next="hug">Give me that hug 🫂</button>
+      </div>
+    </section>
+
+    <!-- HUG -->
+    <section id="hug" class="screen">
+      <div class="card hug-card">
+        <div class="hug-scene">
+          <div class="person left">🧑🏻</div>
+          <div class="heart-pop">♥</div>
+          <div class="person right">👩🏻</div>
+        </div>
+        <p class="eyebrow">DISTANCE: 0 KM FOR THIS MOMENT</p>
+        <h1>Come here,<br><span>my Sweetu.</span> 🫂</h1>
+        <p class="sub">Consider this your long distance hug. Hold it as long as you want.</p>
+        <button class="primary" id="againBtn">Read the letter again ♡</button>
+        <p class="final-line">Happy birthday, Noor.<br>Stay cute. Stay happy. Stay mine. 💙</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
