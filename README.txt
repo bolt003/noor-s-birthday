@@ -36,6 +36,6 @@ Or use VS Code Live Server.
 4. Your site will be live in 1–2 minutes
 
 No paid hosting needed.
-
+   d
 ## Pages flow
 Lock → Welcome → Question → Birthday → Gallery → Letter → Poem → Hug
